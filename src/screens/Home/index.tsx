@@ -10,7 +10,7 @@ const Home = () => {
 
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('MiniAppScreen', 'Data pass from Platform app');
+          navigation.navigate('MiniAppScreen', {miniAppMode: true});
         }}>
         <Text> Open mini App</Text>
       </TouchableOpacity>
